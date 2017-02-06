@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#
+import sphinx_bootstrap_theme  
 # SaltOps documentation build configuration file, created by
 # sphinx-quickstart on Mon Feb  6 13:55:25 2017.
 #
@@ -82,7 +82,17 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'bootstrap'
+html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()  
+html_theme_options = {  
+    'navbar_title': "Sandglass",  
+    'globaltoc_depth': 2,  
+    'globaltoc_includehidden': "true",  
+    'navbar_class': "navbar navbar-inverse",  
+    'navbar_fixed_top': "true",  
+    'bootswatch_theme': "united",  
+    'bootstrap_version': "3",  
+}  
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
